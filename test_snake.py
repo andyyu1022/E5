@@ -1,4 +1,5 @@
 import unittest
+import pygame
 import snake
 
 class TestYourScore(unittest.TestCase):
@@ -10,7 +11,7 @@ class TestYourScore(unittest.TestCase):
     screen = pygame.Surface((800, 600))
 
     # Call the function
-    Your_score(1)
+    snake.Your_score(1)
 
     # Check if the score is rendered correctly
     rendered_text = screen.get_at((0, 0))
